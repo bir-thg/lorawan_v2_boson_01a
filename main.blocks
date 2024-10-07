@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="J(e?zjkm=2p/,9(C$puK" x="0" y="0"><statement name="HANDLER"><block type="setCalibration400ppm" id="mOvOv5!W%np_S3q^;sa;"><next><block type="basic_show_icon" id="2a?ayTa^Ty_v)3$.Q,eU"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="i">IconNames.Yes</field><value name="interval"><shadow type="math_number" id="`;/}0,Y,5BD}sz*!p]B]"><field name="NUM">600</field></shadow></value><next><block type="device_set_led_color" id="m;+v40f2E^=TCvFY{V=^"><value name="color"><shadow type="colorNumberPicker" id="[7W?}?,}lpbvJC-VM(Qr"><field name="value">0x00ff00</field></shadow></value><next><block type="IotLoRaNode_InitialiseRadioOTAA" id="%dmW@L+}K:_-QvY)PWS?"><value name="deveui"><shadow type="text" id="Cn#QPv*7E;1]!vpkx?]n"><field name="TEXT">70B3D57ED00653A1</field></shadow></value><value name="appkey"><shadow type="text" id="fz~8[~~U^kqt:@M8t=~l"><field name="TEXT">7410F8F059907B899E22F3BE33FCF39F</field></shadow></value></block></next></block></next></block></next></block></statement></block><block type="device_forever" id="NDB8;pwtDo8n_=mn5(SX" x="-291" y="301"></block><block type="device_button_selected_event" id="!uLBqE|{%7sfEsEzL_mc" x="631" y="301"><field name="NAME">Button.A</field><value name="eventType"><shadow type="control_button_event_click"></shadow><block type="control_button_event_value" id="%5|q7]Oi$,`l#T[wj,fU"><field name="id">ButtonEvent.Up</field></block></value><statement name="HANDLER"><block type="IotLoRaNode_HumidityValue" id="xza3JQYaN#DTq..e{:nQ"><field name="chanNum">Channels.One</field><value name="humidityVal"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="read_Humidity" id="9=oP0$9Pd{x7eHE$Jo0-"></block></value><next><block type="IotLoRaNode_temperatureValue" id="8dOEk]k+G6oy7,f;!GG_"><field name="chanNum">Channels.One</field><value name="temperatureVal"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="read_Temperature" id=":t%k(#*^+r%)iAI0IWfi"></block></value><next><block type="IotLoRaNode_AnalogueValue" id="mSCWA~nqQ!)@kjD6Jl!u"><field name="chanNum">Channels.One</field><value name="value"><shadow type="math_number_minmax"><mutation min="0" max="254" label="Value" precision="0"></mutation><field name="SLIDER">0</field></shadow><block type="read_CO2" id="5qaTrQ,a9kD.mn`r=k8*"></block></value><next><block type="IotLoRaNode_TransmitMessage" id="}e[iXMP[zn9Rfa*?%Ei`"></block></next></block></next></block></next></block></statement></block><block type="device_button_selected_event" id=":a44AlI?zO(YUg7/U%v?" x="78" y="408"><field name="NAME">Button.B</field><value name="eventType"><shadow type="control_button_event_click"></shadow><block type="control_button_event_value" id="LFX+K)NG4dgL12(IY_Bv"><field name="id">ButtonEvent.Up</field></block></value><statement name="HANDLER"><block type="device_show_leds" id="jW._;d%vr400|3-bz]TI"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_number" id="wKv!`AwP+KB!u?]ywdB`"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="read_Humidity" id="#l`%n+yRR*IsLMNuM@K:"></block></value><value name="interval"><shadow type="math_number" id="z%}iqjH_g^=n$KQztDPc"><field name="NUM">1000</field></shadow></value><next><block type="device_show_leds" id="1/#H4uNoqq$,ul%H%$f("><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_number" id="r8+(XsrpEnI*;f.v,FgC"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="read_Temperature" id="z!I^u5$Hj6nR%Lq/z}tN"></block></value><value name="interval"><shadow type="math_number" id="jg+xr8d%TkT%yw2J;=1-"><field name="NUM">1000</field></shadow></value><next><block type="device_show_leds" id="nN3lSnefKu39oLgOtxTN"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_number" id="Z5|=638Wg10`$(-Akg:x"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="read_CO2" id="wCbb;UQM+tmgyl-JW2]$"></block></value><value name="interval"><shadow type="math_number" id="w)mhLWxo(ic#n}=(,,g,"><field name="NUM">1000</field></shadow></value><next><block type="device_show_leds" id="ncXuO^{_EkhNkC+`fbQU"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>

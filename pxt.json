@@ -1,0 +1,30 @@
+{
+    "name": "lorawan_v2_boson_01a",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "v2": "*",
+        "IoTLoRaNode": "github:ud-edu/pxt-iot-lora-node-calliope#v0.0.6",
+        "SCD30": "github:calliope-edu/pxt-scd30#cb17619e41d8ba93b66544422a26dd3beafa0bc2"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v6.0.27",
+        "tag": "v6.0.27",
+        "commits": "https://github.com/microsoft/pxt-calliope/commits/ed211b0a2354ec8bd5abb15c5373bfbd3ad0c03f",
+        "target": "6.0.42",
+        "pxt": "9.0.12",
+        "targetId": "calliopemini"
+    },
+    "supportedTargets": [
+        "calliopemini"
+    ],
+    "preferredEditor": "blocksprj"
+}
